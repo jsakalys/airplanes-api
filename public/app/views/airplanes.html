@@ -1,0 +1,6 @@
+<h1>Airplanes</h1>
+<a href="/signup" ng-hide="isLoggedIn()">Signup</a>
+<a href="/login" ng-hide="isLoggedIn()">Login</a>
+<a ng-click="logout()" ng-show="isLoggedIn()">Logout</a>
+
+<div class="well" ng-repeat="airplane in airplanes"></div>
